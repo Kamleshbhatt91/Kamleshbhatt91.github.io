@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Customer Support Ticketing System</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Automated Customer Support Ticketing System</h1>
+    </header>
+    <article>
+        <p>This project involved the development of an automated ticketing system that uses AI to categorize, prioritize, and assign customer support tickets. The system also includes an intelligent predictive model that helps foresee customer issues based on previous support data.</p>
+
+        <p>Here's a chart showing the reduction in ticket resolution time before and after automation:</p>
+
+        <!-- Chart.js Visualization -->
+        <canvas id="ticketResolutionChart" width="400" height="200"></canvas>
+        <script>
+            var ctx = document.getElementById('ticketResolutionChart').getContext('2d');
+            var ticketResolutionChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Before Automation', 'After Automation'],
+                    datasets: [{
+                        label: 'Resolution Time (Hours)',
+                        data: [5, 2],  // Mock data: Resolution time before and after automation
+                        backgroundColor: ['#FF5733', '#28A745'],
+                        borderColor: ['#FF5733', '#28A745'],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        </script>
+
+        <p>This chart highlights how the introduction of automation has significantly reduced the average time required to resolve customer support tickets, leading to higher customer satisfaction and more efficient support operations.</p>
+    </article>
+    <footer>
+        <p>Published by Kamlesh Bhatt | <a href="mailto:bhattkamlesh91@gmail.com">Contact</a></p>
+    </footer>
+</body>
+</html>

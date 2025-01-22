@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving Operational Efficiency Through Process Re-engineering and Automation</title>
+    <link rel="stylesheet" href="blog.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Driving Operational Efficiency Through Process Re-engineering and Automation</h1>
+    </header>
+    <article>
+        <p>In my 10+ years of experience, I’ve learned that process re-engineering and automation are essential for improving operational efficiency. A major achievement in my career was the implementation of an automated incident management system at American Express, which reduced our average response time by 30%, enhancing overall service delivery.</p>
+        
+        <p>To illustrate the impact, here's a chart showing the reduction in response times before and after automation:</p>
+        
+        <!-- Chart.js Visualization -->
+        <canvas id="incidentResponseChart" width="400" height="200"></canvas>
+        <script>
+            var ctx = document.getElementById('incidentResponseChart').getContext('2d');
+            var incidentResponseChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Before Automation', 'After Automation'],
+                    datasets: [{
+                        label: 'Response Time (Minutes)',
+                        data: [45, 30],  // Mock data: Response time before and after automation
+                        backgroundColor: ['#FF5733', '#28A745'],
+                        borderColor: ['#FF5733', '#28A745'],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        </script>
+
+        <p>The implementation of automation tools helped improve our operational metrics significantly, with a 30% faster response time.</p>
+    </article>
+    <footer>
+        <p>Published by Kamlesh Bhatt | <a href="mailto:bhattkamlesh91@gmail.com">Contact</a></p>
+    </footer>
+</body>
+</html>

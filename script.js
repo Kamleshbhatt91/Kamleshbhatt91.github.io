@@ -157,3 +157,54 @@ if (certificationsContainer) {
         </div>
     `).join('');
 }
+// Blog data
+const blogs = [
+    {
+        title: "Journey to Six Sigma Green Belt Certification",
+        description: "Exploring the concepts and tools learned during my Six Sigma Green Belt journey.",
+        link: "blog1.html"
+    },
+    {
+        title: "Maximizing Efficiency in Credit Card Operations",
+        description: "Strategies and best practices for optimizing credit card operations.",
+        link: "blog2.html"
+    }
+];
+
+// Project data
+const projects = [
+    {
+        title: "SEO Optimization Tool",
+        description: "Developed a tool to analyze and optimize website SEO performance.",
+        link: "project1.html"
+    },
+    {
+        title: "Customer Support Dashboard",
+        description: "Designed a dashboard to track and improve customer support metrics.",
+        link: "project2.html"
+    }
+];
+
+// Populate blogs dynamically
+const blogsContainer = document.getElementById("blogs-container");
+if (blogsContainer) {
+    blogsContainer.innerHTML = blogs.map(blog => `
+        <div class="blog-item">
+            <h4>${blog.title}</h4>
+            <p>${blog.description}</p>
+            <a href="${blog.link}" class="blog-link">Read More</a>
+        </div>
+    `).join('');
+}
+
+// Populate projects dynamically
+const projectsContainer = document.getElementById("projects-container");
+if (projectsContainer) {
+    projectsContainer.innerHTML = projects.map(project => `
+        <div class="project-item">
+            <h4>${project.title}</h4>
+            <p>${project.description}</p>
+            <a href="${project.link}" class="project-link">View Project</a>
+        </div>
+    `).join('');
+}

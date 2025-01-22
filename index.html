@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kamlesh Bhatt - Senior Project Manager with 10+ years of experience in operations and product management.">
+    <meta name="keywords" content="Kamlesh Bhatt, Senior Operations Manager, Project Manager, Portfolio, Professional">
+    <link rel="canonical" href="https://kamleshbhatt91.github.io/">
+    <title>Kamlesh Bhatt - Professional Portfolio</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        /* Additional styles for better presentation */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #menu-toggle {
+            font-size: 28px;
+            background: none;
+            border: none;
+            color: #fff;
+            display: none;
+        }
+
+        #navLinks {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        #navLinks li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .hero {
+            background-color: #2a3d6b;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .cta-button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #2a3d6b;
+        }
+
+        ul {
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 10px 0;
+            font-size: 18px;
+        }
+
+        .experience-item {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .experience-item h3 {
+            font-size: 22px;
+            color: #333;
+        }
+
+        .experience-item p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            #navLinks {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+                text-align: center;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                padding: 20px;
+            }
+
+            #menu-toggle {
+                display: block;
+            }
+
+            #navLinks li a {
+                padding: 10px 0;
+            }
+        }
+
+        /* New styles for the Certifications Section */
+        #certifications {
+            background-color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .certification-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .certification-item {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .certification-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .certification-item h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .certification-item a {
+            color: #ff6f61;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .certification-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav id="navbar">
+            <div class="logo">Kamlesh Bhatt</div>
+            <button id="menu-toggle" aria-expanded="false">&#9776;</button>
+            <ul id="navLinks">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#competencies">Core Competencies</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#certifications">Certifications</a></li> <!-- Added Certification Link -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" data-aos="fade-up">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Welcome to My Professional Portfolio</h1>
+            <p>Showcasing my journey, achievements, and expertise in operations, product, and project management.</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" data-aos="fade-right">
+        <h2>About Me</h2>
+        <p>I am Kamlesh Bhatt, a results-driven Senior Operations Manager with over 10 years of experience leading cross-functional teams and managing product and project lifecycles. With expertise in Agile methodologies, incident management, and optimizing operational processes, I have a proven track record of delivering high-impact projects and creating customer-centric solutions that drive growth and exceed stakeholder expectations.</p>
+    </section>
+
+    <!-- Core Competencies Section -->
+    <section id="competencies" data-aos="fade-left">
+        <h2>Core Competencies</h2>
+        <ul id="competencies-list">
+            <li>Business Strategy Execution</li>
+            <li>Root Cause Analysis & Escalation Handling</li>
+            <li>Service Level Agreement & Quality Management</li>
+            <li>Client & Stakeholder Relations</li>
+            <li>Operational Control & Compliance</li>
+            <li>Product Management</li>
+            <li>Market Research and Analysis</li>
+            <li>Performance Management</li>
+            <li>Agile Methodologies</li>
+            <li>Data Analysis and Metrics Tracking</li>
+            <li>Customer Experience Design</li>
+            <li>System Transitions & Change Management</li>
+            <li>Team Leadership & Development</li>
+        </ul>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" data-aos="fade-up">
+        <h2>Professional Experience</h2>
+
+        <div class="experience-item">
+            <h3>Lead, Credit Card Operations | American Express</h3>
+            <p><strong>May 2015 – Oct 2024</strong></p>
+            <ul>
+                <li>Collaborated with cross-functional teams to define product vision and roadmap for credit card offerings, ensuring alignment with customer needs and market trends.</li>
+                <li>Conducted market research and competitive analysis, leading to a 15% increase in customer satisfaction scores.</li>
+                <li>Launched a new rewards program, increasing customer engagement by 20%.</li>
+                <li>Developed user personas and journey maps, guiding product development priorities.</li>
+                <li>Utilized Agile methodologies to manage product backlogs and facilitate sprint planning, improving team efficiency by 30%.</li>
+                <li>Spearheaded a project to streamline the card replacement process, reducing turnaround time by 40%.</li>
+                <li>Recognized with the "Excellence in Innovation" award for contributions to product development.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <h3>Subject Matter Expert (SME) | Convergys</h3>
+            <p><strong>Oct 2013 – May 2015</strong></p>
+            <ul>
+                <li>Initiated strategic projects resulting in a 10% increase in operational efficiency and a 5% cost reduction.</li>
+                <li>Achieved 99% TAT for customer resolution by optimizing workflows.</li>
+                <li>Developed dashboards for performance tracking, improving SLA compliance by 20%.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <h3>Senior Associate | IBM Global Process Services</h3>
+            <p><strong>June 2012 – Oct 2013</strong></p>
+            <ul>
+                <li>Enhanced the quality of customer interactions by 20%, improving service delivery.</li>
+                <li>Reduced complaint resolution time by 25% and increased positive feedback by 15%.</li>
+                <li>Contributed to process improvements, leading to a 10% efficiency increase and 5% cost savings.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" data-aos="fade-up">
+        <h2>Certifications</h2>
+        <div class="certification-list">
+            <div class="certification-item">
+                <h3>Microsoft Copilot for Productivity by Microsoft and LinkedIn</h3>
+                <a href="https://www.linkedin.com/learning/certificates/dec55930d846d8fffdc427bd495c243ecb9f8cca1a3af07d03fac06d7b72e37a?trk=share_certificate" target="_blank">View Certification</a>
+            </div>
+            <div class="certification-item">
+                <h3>Aha! Product Management Professional Certificate</h3>
+                <a href="https://www.linkedin.com/learning/certificates/0a7163dbdc29d5fac1521f6258e89cbf7d3acba3409b2fab2c87635fd8e9a1c5?trk=share_certificate" target="_blank">View Certification</a>
+            </div>
+            <div class="certification-item">
+                <h3>Atlassian Agile Project Management Professional Certificate</h3>
+                <a href="https://www.linkedin.com/learning/certificates/8835adb150b800aa0ef21d1961f5c30bd110f8a130ef870a657e4fb1545a10e7" target="_blank">View Certification</a>
+            </div>
+            <div class="certification-item">
+                <h3>Six Sigma: Green Belt</h3>
+                <a href="https://www.linkedin.com/learning/certificates/0e8e417a4894b10b61877550d78d054f6fa14bbd6c2de7f4150455ad20c8dc63" target="_blank">View Certification</a>
+            </div>
+            <div class="certification-item">
+                <h3>Agile Project Management with Jira Cloud: 1 Projects, Boards, and Issues</h3>
+                <a href="https://www.linkedin.com/learning/certificates/72a6c5ca7d3cadd909d70a568609d4ebfd6fe752ec9f99008b1accbf9ab922d1" target="_blank">View Certification</a>
+            </div>
+            <div class="certification-item">
+                <h3>Agile Project Management with Jira Cloud: 2 Lean and Agile Processes</h3>
+                <a href="https://www.linkedin.com/learning/certificates/dad84eaa1772c5fbc6b9cf2a90f3696ee65aecc691b3b39a6f0f62eeec709cf0" target="_blank">View Certification</a>
+            </div>
+            <div class="certification-item">
+                <h3>Introduction to Artificial Intelligence</h3>
+                <a href="https://www.linkedin.com/learning/certificates/deeb902eed11a9dce32b73eef09dd7b1926c31b2717eb88664695a84c455a8e8" target="_blank">View Certification</a>
+            </div>
+            <div class="certification-item">
+                <h3>Advanced Certified Scrum Product Owner (ACSPO)</h3>
+                <a href="https://www.linkedin.com/learning/certificates/eda3398faf21ec49cd99da3a59c114ad545e827e0fd40537fcdeddff61239c70" target="_blank">View Certification</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <p>If you'd like to connect or have any questions, feel free to reach out!</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Kamlesh Bhatt. All rights reserved.</p>
+        <ul>
+            <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+            <li><a href="https://github.com/kamleshbhatt91">GitHub</a></li>
+            <li><a href="mailto:kamlesh@example.com">Email</a></li>
+        </ul>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
